@@ -1,4 +1,4 @@
-class rotate_array_by_d_steps {
+class RotateArrayByDSteps {
     
     void rotateArr(int arr[], int d) {
         int n = arr.length;
