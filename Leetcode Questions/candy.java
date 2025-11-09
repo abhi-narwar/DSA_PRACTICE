@@ -1,6 +1,6 @@
 import java.util.Arrays;
-class Candy{
-    public int candy(int[] ratings) {
+class candy{
+    public int Candy(int[] ratings) {
         int n = ratings.length;
         int[] candies = new int[n];
         
