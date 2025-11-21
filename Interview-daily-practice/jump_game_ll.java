@@ -1,18 +1,19 @@
 class jump_game_ll {
     public int jump(int[] nums) {
         int jumps = 0;
-        int currentEnd = 0;
-        int farthest = 0;
-        
+        int current_end = 0;
+        int reach = 0;
+
         for (int i = 0; i < nums.length - 1; i++) {
-            farthest = Math.max(farthest, i + nums[i]);
+            reach = Math.max(reach, i + nums[i]);
+
             
-            if (i == currentEnd) {
+            if (i == current_end) {
                 jumps++;
-                currentEnd = farthest;
+                current_end = reach;
             }
         }
-        
+
         return jumps;
     }
 }
